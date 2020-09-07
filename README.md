@@ -9,7 +9,7 @@ Pemohon diharapkan dapat menunjukkan pemahaman dan kemampuannya membuat program 
 * (tugas 2) melakukan proses harian yang menghitung top engagement dan mengirimkan hasilnya ke email
 
 ## tugas 1
-Akan diberikan 10 file teks yang berisi json-styled twitter conversation ([link](https://drive.google.com/file/d/1N4MXEgT3y_lt1LgPKcWGZgh1BSw5f75e/view?usp=sharing)). File-file tersebut akan diproses (dengan multithread) untuk dimasukkan ke dalam database mysql dan apache solr. Adapun spesifikasi sebagai berikut:
+Akan diberikan 10 file teks yang berisi json-styled twitter conversation ([link](gniplogs.zip)). File-file tersebut akan diproses (dengan multithread) untuk dimasukkan ke dalam database mysql dan apache solr. Adapun spesifikasi sebagai berikut:
 * file disimpan dalam folder tertentu
 * setiap file diproses untuk dibaca dan data setiap conversation (perline) dimasukkan ke dalam tabel database `twitter_feed` dengan [skema berikut](twitter_feed_db.sql)
 * setiap conversation juga dimasukkan ke dalam apache solr dengan nama collection `twitter_feed` dengan [skema berikut](twitter_feed_solr.txt)
@@ -31,6 +31,7 @@ Membuat bot yang membuat laporan dengan spesifikasi berikut:
   * retweet : post/conversation dengan status_type 1
   * reply   : post/conversation dengna status_type 2
   * engagement : retweet + reply
+* Kode dikumpulkan dalam bentuk ZIP ataupun Docker Image yang disertai dengan petunjuk instalasi dan menjalankan aplikasi
 
 ## Penilaian:
 * Code Readability
